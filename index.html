@@ -108,8 +108,8 @@
 
         @font-face {
             font-family: 'TmonMonsori';
-            src: url('TmonMonsori.eot');
-            src: local('☺'), url('TmonMonsori.woff') format('woff'), url('TmonMonsori.ttf') format('truetype');
+            src: url('TmonMonsori-subset.eot');
+            src: url('TmonMonsori-subset.woff2') format('woff2'), url('TmonMonsori-subset.woff') format('woff'), url('TmonMonsori-subset.ttf') format('truetype');
         }
 
         body {
@@ -121,6 +121,17 @@
             margin: 0px;
             font-family: 'TmonMonsori';
             font-size: 5rem;
+        }
+
+        h2 {
+            margin: 0px;
+            font-family: 'Hanna';
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 13rem;
         }
 
         button {
@@ -192,10 +203,30 @@
                 border-color: #9E9E9E transparent transparent transparent;
             }
 
-        img {
-            display: block;
+        #result_popup {
+            visibility:hidden;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0, 0.5);
+        }
+
+        #result_popup_bg {
+            background-color: white;
+            width: 25rem;
+            height: auto;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
             margin: auto;
-            width: 13rem;
+            padding: 50px;
+        }
+
+        #result_popup_text {
+            font-family: 'Hanna';
+            font-size: 3rem;
         }
     </style>
 
@@ -290,6 +321,21 @@
         <br />
         <img src="duri.png" />
         <button id="go_rand_menu" onclick="GetRandMenu()">랜덤 돌리기</button>
+    </div>
+
+    <div id="result_popup">
+        <div id="result_popup_bg">
+            <h2>그래서 메뉴는요</h2>
+            <br />
+            <span id="result_popup_text">
+                케이크
+            </span>
+            <br />
+            <br />
+            <br />
+            <button id="go_rand_menu" onclick="ClickNope()" style="margin-right:0.5rem;">싫어</button>
+            <button id="go_rand_menu" onclick="ClickYes()" style="margin-left:0.5rem;">좋아</button>
+        </div>
     </div>
 </body>
 </html>
