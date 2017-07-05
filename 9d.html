@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @media (max-width:360px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        @media (min-width:361px) and (max-width:399px) {
+            html {
+                font-size: 11px;
+            }
+        }
+
+        @media (min-width:400px) and (max-width:439px) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width:440px) and (max-width:479px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width:480px) and (max-width:519px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width:520px) and (max-width:559px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width:560px) and (max-width:599px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width:600px) and (max-width:639px) {
+            html {
+                font-size: 17px;
+            }
+        }
+
+        @media (min-width:640px) and (max-width:679px) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:680px) and (max-width:719px) {
+            html {
+                font-size: 19px;
+            }
+        }
+
+        @media (min-width:720px) and (max-width:759px) {
+            html {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width:760px) and (max-width:799px) {
+            html {
+                font-size: 21px;
+            }
+        }
+
+        @media (min-width:800px) and (max-width:839px) {
+            html {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width:840px) and (max-width:879px) {
+            html {
+                font-size: 23px;
+            }
+        }
+
+        @media (min-width:880px) {
+            html {
+                font-size: 24px;
+            }
+        }
+
+        /*@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);*/
+        /*@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);*/
+
+        @font-face {
+            font-family: 'Hanna';
+            font-style: normal;
+            font-weight: 400;
+            src: url('http://fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot');
+            src: url('http://fonts.gstatic.com/ea/hanna/v3/BM-HANNA.eot?#iefix') format('embedded-opentype'), url('http://fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff2') format('woff2'), url('http://fonts.gstatic.com/ea/hanna/v3/BM-HANNA.woff') format('woff'), url('http://fonts.gstatic.com/ea/hanna/v3/BM-HANNA.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('TmonMonsori.eot');
+            src: local('☺'), url('TmonMonsori.woff') format('woff'), url('TmonMonsori.ttf') format('truetype');
+        }
+
+        body {
+            background-color: #FFD54F;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0px;
+            font-family: 'TmonMonsori';
+            font-size: 5rem;
+        }
+
+        button {
+            background-color: #2196F3;
+            color: white;
+            font-family: 'Hanna';
+            border: none;
+            width: 10rem;
+            height: 3rem;
+            border-radius: 1.5rem;
+            -webkit-border-radius: 1.5rem;
+            -moz-border-radius: 1.5rem;
+            font-size: 1.5rem;
+            padding: 0px;
+            text-align: center;
+            box-shadow: 0px 5px 10px rgba(33,150,243,0.5);
+            -webkit-box-shadow: 0px 5px 10px rgba(33,150,243,0.5);
+            -moz-box-shadow: 0px 5px 10px rgba(33,150,243,0.5);
+        }
+
+            button:hover {
+                background-color: #42A5F5;
+            }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        #menu_bubble {
+            font-family: 'Hanna', sans-serif;
+            font-size: 1.5rem;
+            display: inline-block;
+            margin: auto;
+            width: 20rem;
+            height: 8rem;
+            line-height: 8rem;
+            position: relative;
+            background-color: white;
+            text-align: center;
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            box-shadow: 0px 10px 0px 0px #9E9E9E;
+            -webkit-box-shadow: 0px 0.5rem 0px 0px #9E9E9E;
+            -moz-box-shadow: 0px 0.5rem 0px 0px #9E9E9E;
+        }
+
+            #menu_bubble:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: calc(10rem - 1rem);
+                top: 8rem;
+                border: 1rem solid;
+                border-color: #ffffff transparent transparent transparent;
+            }
+
+            #menu_bubble:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: calc(10rem - 1.2rem);
+                top: 8.4rem;
+                border: 1.2rem solid;
+                border-color: #9E9E9E transparent transparent transparent;
+            }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 13rem;
+        }
+    </style>
+
+    <script>
+        //겁나 귀찮아'ㅅ'
+        _menu = [
+                '냉면',
+                '설렁탕',
+                '닭도리탕',
+                '삼계탕',
+                '돈까스',
+                '비빔밥',
+                '김치찌개',
+                '제육볶음',
+                '낙지',
+                '황태국',
+                '감자탕',
+                '순대국',
+                '시래기국',
+                '샤브샤브',
+                '국수',
+                '돌솥밥',
+                '떡튀순',
+                '파스타',
+                '리조또',
+                '햄버거',
+                '쌀국수',
+                '피자',
+                '일본식 카레',
+                '인도 커리',
+                '삼겹살',
+                '분식라면',
+                '초밥',
+                '라멘',
+                '소바',
+                '우동',
+                '돈부리',
+                '짜장면',
+                '짬뽕',
+                '중국집',
+                '간장게장',
+                '황태라면',
+                '해물라면',
+                '쭈꾸미',
+                '돼지주물럭',
+                '닭갈비',
+                '매운갈비',
+                '부대찌개',
+                '막국수',
+                '장어덮밥',
+                '함박스테이크',
+                '김치찜',
+                '칼국수',
+                '육개장',
+                '짜글이',
+                '구내식당',
+                '죽',
+                '알밥',
+        ];
+
+        _isPlayRandAny = false;
+        _timer = undefined;
+
+        function GetRandMenu() {
+            if (_isPlayRandAny == true) {
+                return;
+            }
+            _isPlayRandAny = true;
+            setTimeout("SetResultRandMenu()", 3000);
+            _timer = setInterval("ShowRandAni()", 100);
+        }
+
+        function ShowRandAni() {
+            var txt = document.getElementById("menu_bubble_text");
+            var rand = Math.floor(Math.random() * _menu.length);
+            txt.innerHTML = _menu[rand];
+        }
+
+        function SetResultRandMenu() {
+            clearInterval(_timer);
+            _isPlayRandAny = false;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>오늘 머먹?</h1>
+    <div id="menu_rand_area">
+        <div id="menu_bubble">
+            <span id="menu_bubble_text">오늘 메뉴는...</span>
+        </div>
+        <br />
+        <img src="duri.png" />
+        <button id="go_rand_menu" onclick="GetRandMenu()">랜덤 돌리기</button>
+    </div>
+</body>
+</html>
